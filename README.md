@@ -10,7 +10,7 @@ of a small refrigerator. So today I've been working on our first game Project. C
 around this grid. The objective is to kill the opponent using your character objects and not die to the opponent. Very basic idea, so coding it should be simple right? (spoiler, its probably not going to be that simple)
 lets take a look:
 
-/*
+````
 var testMap = [
   [3, 3, 3, 3, 3],
   [3, 4, 4, 3, 3],
@@ -47,7 +47,7 @@ function randomTileSet() {
 function addSprite(num){}
 
 console.log(testMap[randomTileSet()][randomTileSet()]);
-*/
+````
 
 So I dont understand why this text is suddenly green in my notepad editor. So we have a two dimensional array that stores values that each will correspond to a "sprite" tile, im guessing that each "tile" object is going to have to store values within it. Which is why I think objects would be the way to go. Essentially, even the character should be an object of type TILE because thats essentially where he will be moving along. Every object should inherit basic properties such as passable or not passable. Maybe we can switch/toggle that on and off using DOM and Jquery. So far the code atleast iterates through every object from left to right and prints them out the correct number of times. We can even get a random tile from the entire test map. Thatll probably go into a randomMapGenerate function. probably on every newGame(); So far having fun and learning which is the key. I'll take a break for now and come back to this in a few. I think I can get a game of League in for now. 06/24/2018 - 1:04pm
 
